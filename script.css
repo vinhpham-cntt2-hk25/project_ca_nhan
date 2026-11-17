@@ -1,0 +1,309 @@
+/* =========================================================
+   DEMO GAME — nút mở demo + modal chứa canvas
+   (dùng chung biến màu trong style.css)
+   ========================================================= */
+
+body.demo-open {
+    overflow: hidden;
+}
+
+/* NÚT DEMO */
+
+.btn.demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--cyan), #8af2ea);
+    box-shadow: 0 0 0 0 #63e5dc88;
+    animation: demoPulse 2.2s infinite;
+}
+
+.btn.demo-btn:hover {
+    transform: translateY(-1px);
+}
+
+.nav-demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+@keyframes demoPulse {
+    0%   { box-shadow: 0 0 0 0 #63e5dc88; }
+    70%  { box-shadow: 0 0 0 14px #63e5dc00; }
+    100% { box-shadow: 0 0 0 0 #63e5dc00; }
+}
+
+/* MODAL */
+
+.demo-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background: #04060bf2;
+    backdrop-filter: blur(6px);
+}
+
+.demo-modal[hidden] {
+    display: none;
+}
+
+.demo-shell {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.demo-top {
+    width: min(100%, calc((100vh - 190px) * 16 / 9));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.demo-top strong {
+    font: 900 22px 'Barlow Condensed', Impact, sans-serif;
+    letter-spacing: 1px;
+}
+
+.demo-top strong span {
+    color: var(--cyan);
+}
+
+.demo-top-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.demo-stage {
+    position: relative;
+    width: min(100%, calc((100vh - 190px) * 16 / 9));
+    aspect-ratio: 16 / 9;
+    border: 1px solid #63e5dc55;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #090c13;
+    box-shadow: 0 0 70px #63e5dc22;
+}
+
+.demo-stage canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.demo-help {
+    width: min(100%, calc((100vh - 190px) * 16 / 9));
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.demo-help b {
+    color: var(--cyan);
+}
+
+.demo-help kbd {
+    display: inline-block;
+    min-width: 20px;
+    padding: 1px 6px;
+    margin: 0 1px;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    background: var(--panel);
+    color: var(--text);
+    font: 700 11px Inter, Arial, sans-serif;
+    text-align: center;
+}
+
+/* OVERLAY TRONG GAME */
+
+.demo-overlay {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    background: #070a11d9;
+    overflow-y: auto;
+}
+
+.demo-overlay[hidden] {
+    display: none;
+}
+
+.ov-card {
+    width: min(620px, 100%);
+    text-align: center;
+}
+
+.ov-card.small {
+    width: min(360px, 100%);
+    display: grid;
+    gap: 10px;
+}
+
+.ov-card h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 4px 0 12px;
+}
+
+.ov-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.ov-mode {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--muted);
+    border-radius: 99px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ov-mode.sel {
+    background: #63e5dc1c;
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.ov-label {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 10px 0 6px;
+}
+
+.ov-heroes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.ov-hero {
+    display: grid;
+    gap: 2px;
+    padding: 9px 8px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: linear-gradient(145deg, var(--panel2), var(--panel));
+    color: var(--text);
+    text-align: center;
+}
+
+.ov-hero b {
+    font: 900 22px 'Barlow Condensed', Impact, sans-serif;
+    letter-spacing: 1px;
+}
+
+.ov-hero small {
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ov-hero em {
+    color: var(--muted);
+    font-size: 11px;
+    font-style: normal;
+    line-height: 1.35;
+}
+
+.ov-hero.sel {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 1px var(--cyan) inset, 0 0 18px #63e5dc33;
+}
+
+.ov-start {
+    margin-top: 16px;
+    padding: 13px 22px;
+}
+
+.ov-note {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 10px 0 0;
+}
+
+/* NÚT CẢM ỨNG */
+
+.touch {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.touch-pad {
+    display: flex;
+    gap: 8px;
+}
+
+.touch button {
+    min-width: 58px;
+    height: 52px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--panel2);
+    color: var(--text);
+    font-weight: 800;
+    font-size: 12px;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.touch button.on {
+    background: #63e5dc33;
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+@media (pointer: coarse) {
+    .touch {
+        display: flex;
+    }
+
+    .demo-help {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .nav-demo {
+        padding: 8px 10px;
+    }
+
+    .ov-hero em {
+        display: none;
+    }
+
+    .demo-top,
+    .demo-stage,
+    .demo-help {
+        width: 100%;
+    }
+}

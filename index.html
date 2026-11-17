@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NO NAME ARENA - Portfolio dự án game đối kháng 1v1.">
+
+    <title>NO NAME ARENA | Game Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="wrap">
+        <nav>
+            <a class="logo" href="#home">
+                NO NAME <span>ARENA</span>
+            </a>
+
+            <div class="navlinks">
+                <a href="#about">TỔNG QUAN</a>
+                <a href="#gameplay">GAMEPLAY</a>
+                <a href="#events">EVENT</a>
+                <a href="#heroes">HERO</a>
+                <a href="#team">ĐỘI NGŨ</a>
+                <a href="#roadmap">ROADMAP</a>
+            </div>
+
+            <button class="btn small nav-demo js-open-demo" type="button">
+                ▶ CHƠI DEMO
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="wrap hero-grid">
+
+            <div>
+                <div class="eyebrow">
+                    Independent Game Project · 1v1 Arena Fighter
+                </div>
+
+                <h1>
+                    FIGHT<br>
+                    <span>YOUR WAY.</span>
+                </h1>
+
+                <p class="lead">
+                    Hai hero. Một đấu trường. Những vật phẩm bất ngờ
+                    và cơ chế Quá tải buộc người chơi phải suy nghĩ
+                    trước mỗi lần tung chiêu. Chiến thắng thuộc về
+                    người biết thích nghi.
+                </p>
+
+                <div class="actions">
+                    <button class="btn demo-btn js-open-demo" type="button">
+                        ▶ CHƠI DEMO NGAY
+                    </button>
+
+                    <a class="btn secondary" href="#gameplay">
+                        KHÁM PHÁ GAMEPLAY
+                    </a>
+
+                    <a class="btn secondary" href="#team">
+                        GẶP ĐỘI NGŨ
+                    </a>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <strong>1 VS 1</strong>
+                        <small>Đối kháng</small>
+                    </div>
+
+                    <div>
+                        <strong>ITEMS</strong>
+                        <small>Vật phẩm</small>
+                    </div>
+
+                    <div>
+                        <strong>OVERLOAD</strong>
+                        <small>Chống spam</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arena" aria-label="Minh họa hai đấu sĩ">
+                <span class="fighter a">A</span>
+                <span class="duel">VS</span>
+                <span class="fighter b">B</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="wrap">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">01 / Concept</div>
+                    <h2>THE ARENA IS YOURS</h2>
+                </div>
+
+                <p>
+                    NO NAME ARENA là dự án game đối kháng 1v1,
+                    tập trung vào khả năng điều khiển, đọc tình huống
+                    và tận dụng cơ hội trong trận đấu.
+                </p>
+            </div>
+
+            <div class="grid3">
+
+                <article class="card">
+                    <div class="number">01 — COMBAT</div>
+                    <h3>ĐỐI ĐẦU</h3>
+                    <p>
+                        Hai hero chiến đấu trên cùng đấu trường bằng
+                        đòn đánh, di chuyển, né tránh và kỹ năng riêng.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="number">02 — PICKUPS</div>
+                    <h3>NHẶT & SỬ DỤNG</h3>
+                    <p>
+                        Vật phẩm gồm khiên, tên lửa tăng quãng lướt và găng boxing gây knockback.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="number">03 — MIND GAME</div>
+                    <h3>ĐỌC ĐỐI THỦ</h3>
+                    <p>
+                        Người chơi cần thay đổi cách tiếp cận thay vì
+                        lặp lại một kỹ năng hoặc combo duy nhất.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMEPLAY SECTION -->
+    <section id="gameplay">
+        <div class="wrap">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">02 / Gameplay</div>
+                    <h2>CORE SYSTEMS</h2>
+                </div>
+
+                <p>
+                    Các hệ thống cốt lõi được thiết kế để mỗi trận đấu
+                    có nhịp độ nhanh nhưng vẫn có chiều sâu chiến thuật.
+                </p>
+            </div>
+
+            <div class="grid3">
+
+                <article class="card">
+                    <div class="number">SYSTEM 01</div>
+                    <h3>HERO COMBAT</h3>
+                    <p>
+                        Mỗi hero có bộ kỹ năng và phong cách chiến đấu riêng.
+                        Thời điểm ra đòn và quản lý khoảng cách rất quan trọng.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="number">SYSTEM 02</div>
+                    <h3>DYNAMIC ITEMS</h3>
+                    <p>
+                        Vật phẩm xuất hiện trong trận. Người chơi phải
+                        cân nhắc rủi ro khi di chuyển đi nhặt chúng.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="number">SYSTEM 03</div>
+                    <h3>OVERLOAD</h3>
+                    <p>
+                        Chỉ kỹ năng đặc biệt làm tăng Quá tải. Đánh thường và lướt không tăng thanh này.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ARENA EVENTS SECTION -->
+    <section id="events">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">03 / Dynamic Arena</div>
+                    <h2>ARENA EVENTS</h2>
+                </div>
+                <p>Sự kiện ngẫu nhiên thay đổi nhịp trận đấu. Hiệu ứng có độ tương phản cao để không che khuất nhân vật và đòn đánh.</p>
+            </div>
+            <div class="grid3">
+                <article class="card event-card"><div class="event-symbol">✦</div><div class="number">EVENT 01</div><h3>BÃO NĂNG LƯỢNG</h3><p>Ánh sáng năng lượng phủ nhẹ đấu trường, tạo điểm nhấn thị giác trong thời gian ngắn.</p></article>
+                <article class="card event-card"><div class="event-symbol">➤</div><div class="number">EVENT 02</div><h3>SÀN TĂNG TỐC</h3><p>Cả hai đấu sĩ được tăng tốc di chuyển, mở ra cơ hội áp sát hoặc rút lui.</p></article>
+                <article class="card event-card"><div class="event-symbol">✧</div><div class="number">EVENT 03</div><h3>MƯA TIA SÁNG</h3><p>Các tia sáng rơi xuống tạo hiệu ứng môi trường, giúp trận đấu sinh động hơn.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEROES SECTION -->
+    <section id="heroes">
+        <div class="wrap">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">03 / Character Roster</div>
+                    <h2>CHOOSE YOUR FIGHTER</h2>
+                </div>
+
+                <p>
+                    Bốn đấu sĩ với bộ kỹ năng, chỉ số và phong cách chiến đấu riêng.
+                </p>
+            </div>
+
+            <div class="filters" id="heroFilters">
+                <button class="active" data-filter="all">TẤT CẢ</button>
+                <button data-filter="rushdown">RUSH-DOWN</button>
+                <button data-filter="balanced">BALANCED</button>
+                <button data-filter="zoner">ZONER</button>
+                <button data-filter="deadly-zoner">DEADLY ZONER</button>
+            </div>
+
+            <div class="grid3" id="heroGrid"></div>
+
+            <p class="hint">
+                Hero yêu thích được lưu bằng localStorage trên trình duyệt hiện tại.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team">
+        <div class="wrap">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">04 / The Team</div>
+                    <h2>MEET THE TEAM</h2>
+                </div>
+
+                <p>
+                    Một nhóm nhỏ với vai trò rõ ràng, cùng phát triển
+                    gameplay, hình ảnh và nội dung dự án.
+                </p>
+            </div>
+
+            <div class="team">
+
+                <article class="member">
+                    <div class="avatar">N</div>
+                    <h3>NONAME</h3>
+                    <div class="role">Leader · Game Developer</div>
+                    <p>
+                        Định hướng dự án, thiết kế gameplay tổng thể,
+                        quản lý tiến độ và phối hợp phát triển.
+                    </p>
+                </article>
+
+                <article class="member">
+                    <div class="avatar">D</div>
+                    <h3>DEV / DESIGN</h3>
+                    <div class="role">Assistant Developer · Designer</div>
+                    <p>
+                        Hỗ trợ lập trình tính năng, thiết kế hình ảnh
+                        và xây dựng tài nguyên cho trò chơi.
+                    </p>
+                </article>
+
+                <article class="member">
+                    <div class="avatar">C</div>
+                    <h3>CỪU</h3>
+                    <div class="role">Content · Project Management</div>
+                    <p>
+                        Lên ý tưởng nội dung, quản lý thông tin
+                        và hỗ trợ điều phối công việc nhóm.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP SECTION -->
+    <section id="roadmap">
+        <div class="wrap">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">05 / Development</div>
+                    <h2>PROJECT ROADMAP</h2>
+                </div>
+
+                <p>
+                    Tích chọn các đầu việc đã hoàn thành.
+                    Trạng thái được lưu tự động trên thiết bị.
+                </p>
+            </div>
+
+            <div class="tool">
+
+                <div class="row">
+                    <strong>Tiến độ dự án</strong>
+                    <strong id="progressLabel">0%</strong>
+                </div>
+
+                <div class="progress">
+                    <div id="progressBar"></div>
+                </div>
+
+                <div class="roadmap" id="roadmapList"></div>
+
+                <div class="control-row">
+                    <button class="btn secondary" id="exportBtn">
+                        XUẤT BÁO CÁO TXT
+                    </button>
+
+                    <button class="btn secondary" id="clearBtn">
+                        ĐẶT LẠI TIẾN ĐỘ
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="wrap">
+        <span>© 2026 NO NAME ARENA · INDEPENDENT GAME PROJECT</span>
+        <span>Prototype Portfolio</span>
+    </div>
+</footer>
+
+<!-- DEMO GAME MODAL -->
+<div class="demo-modal" id="demoModal" role="dialog" aria-modal="true" aria-label="Demo game NO NAME ARENA" hidden>
+    <div class="demo-shell">
+
+        <div class="demo-top">
+            <strong>NO NAME ARENA <span>· PLAYABLE DEMO</span></strong>
+
+            <div class="demo-top-actions">
+                <button class="btn secondary small" id="demoMute" type="button">🔊 ÂM THANH</button>
+                <button class="btn secondary small" id="demoClose" type="button">✕ ĐÓNG (Esc)</button>
+            </div>
+        </div>
+
+        <div class="demo-stage">
+            <canvas id="gameCanvas" width="960" height="540"></canvas>
+            <div class="demo-overlay" id="demoOverlay"></div>
+        </div>
+
+        <div class="demo-help">
+            <span><b>P1:</b> <kbd>A</kbd><kbd>D</kbd> di chuyển · <kbd>W</kbd> nhảy · <kbd>J</kbd> đánh · <kbd>K</kbd> kỹ năng · <kbd>L</kbd> lướt · <kbd>L+K</kbd> kết hợp</span>
+            <span><b>P2:</b> <kbd>←</kbd><kbd>→</kbd> di chuyển · <kbd>↑</kbd> nhảy · <kbd>,</kbd> đánh · <kbd>.</kbd> kỹ năng · <kbd>/</kbd> lướt</span>
+            <span><kbd>P</kbd> tạm dừng · <kbd>M</kbd> tắt tiếng</span>
+        </div>
+
+        <div class="touch" id="touchControls">
+            <div class="touch-pad">
+                <button type="button" data-key="KeyA">◀</button>
+                <button type="button" data-key="KeyW">▲</button>
+                <button type="button" data-key="KeyD">▶</button>
+            </div>
+            <div class="touch-pad">
+                <button type="button" data-key="KeyJ">ĐÁNH</button>
+                <button type="button" data-key="KeyK">SKILL</button>
+                <button type="button" data-key="KeyL">LƯỚT</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
